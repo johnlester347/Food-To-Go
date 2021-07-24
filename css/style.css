@@ -1,2 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Permanent+Marker&display=swap");
+/**** Variables ****/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */ }
 
+a,
+li {
+  text-decoration: none;
+  list-style: none; }
 
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  background-color: #111;
+  color: #fff; }
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #07ad91;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  cursor: pointer; }
+  .btn a {
+    color: #fff; }
+
+.btn:active {
+  transform: scale(0.95rem); }
+
+.icon {
+  color: #07ad91; }
+
+.text-title {
+  font-size: 3.5rem;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 3px black; }
+
+.text_sub-title {
+  font-size: 2.5rem;
+  font-family: "Permanent Marker", cursive;
+  color: #07ad91;
+  text-align: center;
+  font-weight: 100;
+  margin: 3rem auto;
+  text-shadow: 3px 3px 3px black; }
