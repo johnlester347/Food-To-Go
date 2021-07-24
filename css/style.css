@@ -240,6 +240,52 @@ body {
 
 /** ORDER SECTION END **/
 /** CONTACT SECTION **/
+#Contact h2 span {
+  color: #fff; }
+
+.contact-container {
+  padding: 1rem; }
+  .contact-container i {
+    margin-right: 1rem; }
+  .contact-container .social {
+    display: flex;
+    align-items: center; }
+    .contact-container .social h4 {
+      margin-right: 1rem; }
+  .contact-container div {
+    margin-bottom: 1rem; }
+
+.contact-form {
+  width: 340px;
+  margin: auto; }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; }
+  .input-container label {
+    margin-bottom: .5rem;
+    color: #07ad91; }
+
+.contact-form input,
+.contact-form select {
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+.contact-form textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+.contact-form button[type='submit'] {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2rem; }
+
 /** CONTACT SECTION END **/
 header {
   position: relative; }
