@@ -1,0 +1,100 @@
+/** HEADER **/
+.bg-img {
+    background: url(https://source.unsplash.com/random);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h1 span {
+        color: $prim-t_c;
+    }
+
+    .btn {
+        margin-top: 3rem;
+        font-size: $font-size_md;
+    }
+}
+
+
+
+/** NAVIGATION **/
+.navigation {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: $font-family_title;
+    font-size: $font-size_xl;
+    background-color: $logo_c;
+    color: $sec-t_c;
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+}
+
+.btn-nav {
+    height: 40px;
+    width: 40px;
+    margin-right: 0.8rem;
+}
+
+.nav-list {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    border: black;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.nav-list li {
+    width: 100%;
+    border-bottom: 1px solid $prim-t_c;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+}
+
+.nav-link {
+    color: $sec-t_c;
+    text-shadow: 1px 2px 1px $prim-t_c;
+    font-size: $font-size_md;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-social {
+    font-size: $font-size_xl;
+    display: flex;
+    margin-top: 25vh;
+    justify-content: space-evenly;
+}
+
+
+
+
+/** NAVIGATION END **/
