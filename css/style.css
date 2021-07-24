@@ -101,6 +101,15 @@ body {
   margin-top: 25vh;
   justify-content: space-evenly; }
 
+.nav-phone_active {
+  transform: translateX(0rem);
+  transition: all .4s ease;
+  box-shadow: 0 0 55px 30px rgba(7, 171, 144, 0.65); }
+
+.nav-phone_inactive {
+  transform: translateX(-100%);
+  transition: all .4s ease; }
+
 /** NAVIGATION END **/
 header {
   position: relative; }
