@@ -40,11 +40,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 43.75em) {
+    .overlay h1 {
+      font-size: calc((2.5rem * 2.8)); } }
   .overlay h1 span {
     color: #07ad91; }
   .overlay .btn {
     margin-top: 3rem;
     font-size: 1.3rem; }
+    @media only screen and (min-width: 43.75em) {
+      .overlay .btn {
+        margin-top: 10rem;
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem; } }
 
 /** NAVIGATION **/
 .navigation {
@@ -55,6 +63,9 @@ body {
   height: 50px;
   padding-top: 0.5rem;
   justify-content: space-between; }
+  @media only screen and (min-width: 43.75em) {
+    .navigation {
+      padding-top: 1rem; } }
 
 .logo {
   font-family: "Permanent Marker", cursive;
@@ -94,12 +105,18 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px; }
+  @media only screen and (min-width: 43.75em) {
+    .nav-link {
+      font-size: 2.08333rem; } }
 
 .nav-social {
   font-size: 2.5rem;
   display: flex;
   margin-top: 25vh;
   justify-content: space-evenly; }
+  @media only screen and (min-width: 43.75em) {
+    .nav-social {
+      margin-top: 55vh; } }
 
 .nav-phone_active {
   transform: translateX(0rem);
@@ -129,6 +146,9 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 43.75em) {
+    .menu-container {
+      max-width: 650px; } }
   .menu-container aside {
     transform: rotate(-90deg);
     display: flex;
@@ -136,11 +156,19 @@ body {
     align-items: center;
     font-size: 1.3rem;
     font-family: "Permanent Marker", cursive; }
+    @media only screen and (min-width: 43.75em) {
+      .menu-container aside {
+        font-size: 1.82rem;
+        letter-spacing: 2px; } }
   .menu-container li:nth-child(odd) {
     color: #07ad91;
     margin-top: 0.5rem; }
   .menu-container li span {
     color: #fff; }
+  @media only screen and (min-width: 43.75em) {
+    .menu-container ul {
+      background-color: #333;
+      padding: 1rem; } }
 
 .Breakfast-container,
 .Lunch-container,
@@ -152,6 +180,12 @@ body {
   color: #fff;
   border-bottom: 5px solid black;
   letter-spacing: 1px; }
+  @media only screen and (min-width: 43.75em) {
+    .Breakfast-container,
+    .Lunch-container,
+    .Dinner-container {
+      grid-template-columns: 1fr 3fr;
+      font-size: 1.3rem; } }
 
 /** MENU SECTION END **/
 /** ORDER SECTION **/
@@ -168,6 +202,9 @@ body {
   margin: 0.5rem auto;
   padding: 1rem;
   animation: lester 0.5s ease-out; }
+  @media only screen and (min-width: 43.75em) {
+    .card-body {
+      width: 600px; } }
 
 @keyframes lester {
   from {
@@ -179,9 +216,15 @@ body {
   color: #07ad91;
   font-size: 1.3rem;
   margin-bottom: 1rem; }
+  @media only screen and (min-width: 43.75em) {
+    .card-title {
+      font-size: 2.5rem; } }
 
 .card-description {
   margin-bottom: 1rem; }
+  @media only screen and (min-width: 43.75em) {
+    .card-description {
+      font-size: 1.3rem; } }
 
 .break {
   width: 100%;
@@ -202,6 +245,9 @@ body {
   color: #07ad91;
   margin-bottom: 2rem;
   font-size: 1.3rem; }
+  @media only screen and (min-width: 43.75em) {
+    .card-price {
+      font-size: 2.5rem; } }
 
 .card-body .input-container {
   display: block; }
@@ -214,6 +260,15 @@ body {
     border-radius: 5px;
     text-align: center;
     padding: 0.5rem; }
+    @media only screen and (min-width: 43.75em) {
+      .card-body .input-container input[type='number'] {
+        width: 80px;
+        font-size: 1.3rem; } }
+
+@media only screen and (min-width: 43.75em) {
+  .btn-order {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem; } }
 
 .orders-section {
   position: relative; }
@@ -225,18 +280,28 @@ body {
   top: 60%;
   transition: 0.6s ease;
   opacity: 0.7; }
+  @media only screen and (min-width: 43.75em) {
+    .prev,
+    .next {
+      font-size: 1.3rem; } }
 
 .prev {
   left: 3px; }
   .prev:hover {
     background-color: #07ad91;
     color: black; }
+  @media only screen and (min-width: 43.75em) {
+    .prev {
+      left: 20px; } }
 
 .next {
   right: 3px; }
   .next:hover {
     background-color: #07ad91;
     color: black; }
+  @media only screen and (min-width: 43.75em) {
+    .next {
+      right: 20px; } }
 
 /** ORDER SECTION END **/
 /** CONTACT SECTION **/
@@ -254,6 +319,15 @@ body {
       margin-right: 1rem; }
   .contact-container div {
     margin-bottom: 1rem; }
+  @media only screen and (min-width: 43.75em) {
+    .contact-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+      font-size: 1.3rem; } }
 
 .contact-form {
   width: 340px;
@@ -266,6 +340,9 @@ body {
   .input-container label {
     margin-bottom: .5rem;
     color: #07ad91; }
+    @media only screen and (min-width: 43.75em) {
+      .input-container label {
+        font-size: 1.3rem; } }
 
 .contact-form input,
 .contact-form select {
@@ -287,6 +364,14 @@ body {
   margin-bottom: 2rem; }
 
 /** CONTACT SECTION END **/
+@media only screen and (min-width: 43.75em) {
+  h2.text_sub-title {
+    font-size: 3.75rem;
+    margin-bottom: 6rem; }
+  #Contact {
+    width: 650px;
+    margin: auto; } }
+
 header {
   position: relative; }
 
@@ -297,6 +382,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center; }
+  @media only screen and (min-width: 43.75em) {
+    footer {
+      font-size: 1.3rem; } }
   footer p a {
     color: #fff; }
 
