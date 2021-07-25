@@ -26,6 +26,10 @@
             font-size: calc((2.5rem * 2.8));
         }
 
+        @media only screen and (min-width: $bp-nine) {
+            font-size: calc((2.5rem * 3.1));
+        }
+
         span {
             color: $prim-t_c;
         }
@@ -40,6 +44,15 @@
             font-size: $font-size_md;
             padding: 1rem 1.5rem;
         }
+
+        @media only screen and (min-width: $bp-nine) {
+            font-size: $font-size_xl;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
     }
 }
 
@@ -58,6 +71,15 @@
     @media only screen and (min-width: $bp-seven) {
         padding-top: 1rem;
     }
+
+    @media only screen and (min-width: $bp-nine) {
+        position: fixed;
+        padding-top: 1rem;
+        max-width: 1440px;
+        margin: auto;
+        justify-content: stretch;
+        box-shadow: 0 1rem 1rem -0.5rem $prim-t_c;
+    }
 }
 
 .logo {
@@ -73,6 +95,10 @@
     height: 40px;
     width: 40px;
     margin-right: 0.8rem;
+
+    @media only screen and (min-width: $bp-nine) {
+        display: none;
+    }
 }
 
 .nav-list {
@@ -85,6 +111,16 @@
     flex-direction: column;
     padding-left: 1rem;
     padding-top: 2rem;
+
+    @media only screen and (min-width: $bp-nine) {
+        position: relative;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 0;
+        text-align: center;
+    }
 }
 
 .nav-list li {
@@ -92,6 +128,18 @@
     border-bottom: 1px solid $prim-t_c;
     padding: 0.5rem 0;
     margin: 1rem 0;
+
+    @media only screen and (min-width: $bp-nine) {
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: $prim-t_c;
+            transition: 0.3s ease;
+        }
+    }
 }
 
 .nav-link {
@@ -115,7 +163,11 @@
     justify-content: space-evenly;
 
     @media only screen and (min-width: $bp-seven) {
-        margin-top: 55vh;
+        margin-top: 50vh;
+    }
+
+    @media only screen and (min-width: $bp-nine) {
+        display: none;
     }
 }
 
@@ -128,8 +180,11 @@
 
 .nav-phone_inactive {
     transform: translateX(-100%);
-        // navList.style.transition = 'all .4s';
     transition: all .4s ease;
+
+    @media only screen and (min-width: $bp-nine) {
+        transform: translateX(0);
+    }
 }
 /** NAVIGATION END **/
 
@@ -174,6 +229,11 @@
             font-size: $font-size_md * 1.4;
             letter-spacing: 2px;
         }
+
+        @media only screen and (min-width: $bp-nine) {
+            font-size: $font-size_md * 2;
+            letter-spacing: 3px;
+        }
     }
 
     li:nth-child(odd) {
@@ -189,6 +249,10 @@
         @media only screen and (min-width: $bp-seven) {
             background-color: $prim-bg_c;
             padding: 1rem;
+        }
+
+        @media only screen and (min-width: $bp-nine) {
+            text-align: center;
         }
     }
 }
@@ -208,6 +272,10 @@
     @media only screen and (min-width: $bp-seven) {
         grid-template-columns: 1fr 3fr;
         font-size: $font-size_md;
+    }
+
+    @media only screen and (min-width: $bp-nine) {
+        font-size: $font-size_md * 1.3;
     }
 }
 /** MENU SECTION END **/
@@ -240,6 +308,11 @@
     @media only screen and (min-width: $bp-seven) {
         width: 600px;
     }
+
+    @media only screen and (min-width: $bp-nine) {
+        width: 600px;
+        box-shadow: 0 0 10 2px black;
+    }
 }
 
 @keyframes lester {
@@ -258,6 +331,10 @@
     margin-bottom: 1rem;
 
     @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_xl;
+    }
+
+    @media only screen and (min-width: $bp-nine) {
         font-size: $font-size_xl;
     }
 }
@@ -296,6 +373,10 @@
     font-size: $font-size_md;
 
     @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_xl;
+    }
+
+    @media only screen and (min-width: $bp-nine) {
         font-size: $font-size_xl;
     }
 }
@@ -355,6 +436,10 @@
     @media only screen and (min-width: $bp-seven) {
         left: 20px;
     }
+
+    @media only screen and (min-width: $bp-nine) {
+        right: 140px;
+    }
 }
 
 .next {
@@ -412,6 +497,11 @@
 .contact-form {
     width: 340px;
     margin: auto;
+
+    @media only screen and (min-width: $bp-seven) {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 .input-container {
@@ -449,11 +539,12 @@
     width: 100%;
     border-radius: 5px;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_md;
+    }
 }
-
-
 /** CONTACT SECTION END **/
-
 
 
 @media only screen and (min-width: $bp-seven) {
@@ -466,4 +557,151 @@
         width: 650px;
         margin: auto;
     }
+
+    .input-container input,
+    .input-container select,
+    .input-container textarea {
+        height: 40px;
+        font-size: $font-size_md;
+    }
 }
+
+
+@media only screen and (min-width: $bp-nine) {
+    
+  #Contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title form"
+      "contact form";
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  #Contact h2.text_sub-title {
+    grid-area: title;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .contact-container {
+    grid-area: contact;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size_md);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 300px;
+  }
+  .contact-container .social {
+    flex-direction: column;
+  }
+  .contact-container .social h4 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .contact-container .social i {
+    margin-bottom: 1rem;
+    font-size: var(--font-size_xl);
+    transition: 0.3s ease;
+  }
+  .contact-container .social i:hover {
+    cursor: pointer;
+    color: var(--sec-t_c);
+    transition: 0.3s ease;
+  }
+
+  .contact-form {
+    grid-area: form;
+    padding: 2rem;
+  }
+  .contact-form button[type="submit"] {
+    font-size: var(--font-size_md);
+  }
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--sec-t_c);
+    background-color: var(--prim-t_c);
+  }
+  footer > p {
+    margin-right: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .swiper-container {
+//     width: 100%;
+//     height: 100vh;
+//     // background-size: cover;
+//     // background-repeat: no-repeat;
+//   }
+
+//   .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: none;
+//     padding: 2rem;
+
+//     /* Center slide text vertically */
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: -webkit-flex;
+//     display: flex;
+//     -webkit-box-pack: center;
+//     -ms-flex-pack: center;
+//     -webkit-justify-content: center;
+//     justify-content: center;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     -webkit-align-items: center;
+//     align-items: center;
+
+//     img {
+//         width: 100%;
+//         height: auto;
+//         object-fit: cover;
+//         display: block;
+//     }
+//   }
+
+//   .z-img {
+//       height: 20%;
+//   }
+
