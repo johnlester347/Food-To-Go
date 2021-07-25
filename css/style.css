@@ -43,6 +43,9 @@ body {
   @media only screen and (min-width: 43.75em) {
     .overlay h1 {
       font-size: calc((2.5rem * 2.8)); } }
+  @media only screen and (min-width: 56.25em) {
+    .overlay h1 {
+      font-size: calc((2.5rem * 3.1)); } }
   .overlay h1 span {
     color: #07ad91; }
   .overlay .btn {
@@ -53,6 +56,11 @@ body {
         margin-top: 10rem;
         font-size: 1.3rem;
         padding: 1rem 1.5rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .overlay .btn {
+        font-size: 2.5rem; }
+        .overlay .btn:hover {
+          opacity: 0.8; } }
 
 /** NAVIGATION **/
 .navigation {
@@ -66,6 +74,14 @@ body {
   @media only screen and (min-width: 43.75em) {
     .navigation {
       padding-top: 1rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .navigation {
+      position: fixed;
+      padding-top: 1rem;
+      max-width: 1440px;
+      margin: auto;
+      justify-content: stretch;
+      box-shadow: 0 1rem 1rem -0.5rem #07ad91; } }
 
 .logo {
   font-family: "Permanent Marker", cursive;
@@ -79,6 +95,9 @@ body {
   height: 40px;
   width: 40px;
   margin-right: 0.8rem; }
+  @media only screen and (min-width: 56.25em) {
+    .btn-nav {
+      display: none; } }
 
 .nav-list {
   position: absolute;
@@ -90,12 +109,30 @@ body {
   flex-direction: column;
   padding-left: 1rem;
   padding-top: 2rem; }
+  @media only screen and (min-width: 56.25em) {
+    .nav-list {
+      position: relative;
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+      padding-left: 0;
+      padding-top: 0;
+      text-align: center; } }
 
 .nav-list li {
   width: 100%;
   border-bottom: 1px solid #07ad91;
   padding: 0.5rem 0;
   margin: 1rem 0; }
+  @media only screen and (min-width: 56.25em) {
+    .nav-list li {
+      border-bottom: none;
+      padding: 0;
+      margin: 0;
+      transition: .3s ease; }
+      .nav-list li:hover {
+        background-color: #07ad91;
+        transition: 0.3s ease; } }
 
 .nav-link {
   color: #fff;
@@ -116,7 +153,10 @@ body {
   justify-content: space-evenly; }
   @media only screen and (min-width: 43.75em) {
     .nav-social {
-      margin-top: 55vh; } }
+      margin-top: 50vh; } }
+  @media only screen and (min-width: 56.25em) {
+    .nav-social {
+      display: none; } }
 
 .nav-phone_active {
   transform: translateX(0rem);
@@ -126,6 +166,9 @@ body {
 .nav-phone_inactive {
   transform: translateX(-100%);
   transition: all .4s ease; }
+  @media only screen and (min-width: 56.25em) {
+    .nav-phone_inactive {
+      transform: translateX(0); } }
 
 /** NAVIGATION END **/
 /** MENU SECTION **/
@@ -160,6 +203,10 @@ body {
       .menu-container aside {
         font-size: 1.82rem;
         letter-spacing: 2px; } }
+    @media only screen and (min-width: 56.25em) {
+      .menu-container aside {
+        font-size: 2.6rem;
+        letter-spacing: 3px; } }
   .menu-container li:nth-child(odd) {
     color: #07ad91;
     margin-top: 0.5rem; }
@@ -169,6 +216,9 @@ body {
     .menu-container ul {
       background-color: #333;
       padding: 1rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .menu-container ul {
+      text-align: center; } }
 
 .Breakfast-container,
 .Lunch-container,
@@ -186,6 +236,11 @@ body {
     .Dinner-container {
       grid-template-columns: 1fr 3fr;
       font-size: 1.3rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .Breakfast-container,
+    .Lunch-container,
+    .Dinner-container {
+      font-size: 1.69rem; } }
 
 /** MENU SECTION END **/
 /** ORDER SECTION **/
@@ -205,6 +260,10 @@ body {
   @media only screen and (min-width: 43.75em) {
     .card-body {
       width: 600px; } }
+  @media only screen and (min-width: 56.25em) {
+    .card-body {
+      width: 600px;
+      box-shadow: 0 0 10 2px black; } }
 
 @keyframes lester {
   from {
@@ -217,6 +276,9 @@ body {
   font-size: 1.3rem;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 43.75em) {
+    .card-title {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 56.25em) {
     .card-title {
       font-size: 2.5rem; } }
 
@@ -246,6 +308,9 @@ body {
   margin-bottom: 2rem;
   font-size: 1.3rem; }
   @media only screen and (min-width: 43.75em) {
+    .card-price {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 56.25em) {
     .card-price {
       font-size: 2.5rem; } }
 
@@ -293,6 +358,9 @@ body {
   @media only screen and (min-width: 43.75em) {
     .prev {
       left: 20px; } }
+  @media only screen and (min-width: 56.25em) {
+    .prev {
+      right: 140px; } }
 
 .next {
   right: 3px; }
@@ -332,6 +400,10 @@ body {
 .contact-form {
   width: 340px;
   margin: auto; }
+  @media only screen and (min-width: 43.75em) {
+    .contact-form {
+      width: 100%;
+      margin: auto; } }
 
 .input-container {
   display: flex;
@@ -362,6 +434,9 @@ body {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 2rem; }
+  @media only screen and (min-width: 43.75em) {
+    .contact-form button[type='submit'] {
+      font-size: 1.3rem; } }
 
 /** CONTACT SECTION END **/
 @media only screen and (min-width: 43.75em) {
@@ -370,7 +445,64 @@ body {
     margin-bottom: 6rem; }
   #Contact {
     width: 650px;
-    margin: auto; } }
+    margin: auto; }
+  .input-container input,
+  .input-container select,
+  .input-container textarea {
+    height: 40px;
+    font-size: 1.3rem; } }
+
+@media only screen and (min-width: 56.25em) {
+  #Contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "title form" "contact form";
+    margin-top: 4rem;
+    padding-bottom: 4rem; }
+  #Contact h2.text_sub-title {
+    grid-area: title;
+    margin-bottom: 0;
+    padding: 0; }
+  .contact-container {
+    grid-area: contact;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size_md);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    height: 300px; }
+  .contact-container .social {
+    flex-direction: column; }
+  .contact-container .social h4 {
+    text-align: center;
+    margin-top: 2rem; }
+  .contact-container .social i {
+    margin-bottom: 1rem;
+    font-size: var(--font-size_xl);
+    transition: 0.3s ease; }
+  .contact-container .social i:hover {
+    cursor: pointer;
+    color: var(--sec-t_c);
+    transition: 0.3s ease; }
+  .contact-form {
+    grid-area: form;
+    padding: 2rem; }
+  .contact-form button[type="submit"] {
+    font-size: var(--font-size_md); }
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--sec-t_c);
+    background-color: var(--prim-t_c); }
+  footer > p {
+    margin-right: 2rem; } }
 
 header {
   position: relative; }
@@ -387,6 +519,13 @@ footer {
       font-size: 1.3rem; } }
   footer p a {
     color: #fff; }
+
+@media only screen and (min-width: 56.25em) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 30px 5px rgba(7, 171, 144, 0.7);
+    box-shadow: none; } }
 
 .btn {
   border: none;
