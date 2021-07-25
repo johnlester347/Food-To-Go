@@ -290,6 +290,16 @@ body {
 header {
   position: relative; }
 
+footer {
+  border-top: 1px solid #07ad91;
+  color: #07ad91;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center; }
+  footer p a {
+    color: #fff; }
+
 .btn {
   border: none;
   outline: none;
