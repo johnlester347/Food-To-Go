@@ -20,13 +20,26 @@
     align-items: center;
     justify-content: center;
 
-    & h1 span {
-        color: $prim-t_c;
+
+    h1  {
+        @media only screen and (min-width: $bp-seven) {
+            font-size: calc((2.5rem * 2.8));
+        }
+
+        span {
+            color: $prim-t_c;
+        }
     }
 
     .btn {
         margin-top: 3rem;
         font-size: $font-size_md;
+
+        @media only screen and (min-width: $bp-seven) {
+            margin-top: 10rem;
+            font-size: $font-size_md;
+            padding: 1rem 1.5rem;
+        }
     }
 }
 
@@ -41,6 +54,10 @@
     height: 50px;
     padding-top: 0.5rem;
     justify-content: space-between;
+
+    @media only screen and (min-width: $bp-seven) {
+        padding-top: 1rem;
+    }
 }
 
 .logo {
@@ -85,6 +102,10 @@
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_xl / 1.2;
+    }
 }
 
 .nav-social {
@@ -92,6 +113,10 @@
     display: flex;
     margin-top: 25vh;
     justify-content: space-evenly;
+
+    @media only screen and (min-width: $bp-seven) {
+        margin-top: 55vh;
+    }
 }
 
 .nav-phone_active {
@@ -133,6 +158,10 @@
     display: flex;
     flex-direction: column;
 
+    @media only screen and (min-width: $bp-seven) {
+        max-width: 650px;
+    }
+
     aside {
         transform: rotate(-90deg);
         display: flex;
@@ -140,6 +169,11 @@
         align-items: center;
         font-size: $font-size_md;
         font-family: $font-family_title;
+
+        @media only screen and (min-width: $bp-seven) {
+            font-size: $font-size_md * 1.4;
+            letter-spacing: 2px;
+        }
     }
 
     li:nth-child(odd) {
@@ -149,6 +183,13 @@
 
     li span {
         color: $sec-t_c;
+    }
+
+    ul {
+        @media only screen and (min-width: $bp-seven) {
+            background-color: $prim-bg_c;
+            padding: 1rem;
+        }
     }
 }
 
@@ -163,6 +204,11 @@
     color: $sec-t_c;
     border-bottom: 5px solid black;
     letter-spacing: 1px;
+
+    @media only screen and (min-width: $bp-seven) {
+        grid-template-columns: 1fr 3fr;
+        font-size: $font-size_md;
+    }
 }
 /** MENU SECTION END **/
 
@@ -190,6 +236,10 @@
     margin: 0.5rem auto;
     padding: 1rem;
     animation: lester 0.5s ease-out;
+
+    @media only screen and (min-width: $bp-seven) {
+        width: 600px;
+    }
 }
 
 @keyframes lester {
@@ -206,10 +256,18 @@
     color: $prim-t_c;
     font-size: $font-size_md;
     margin-bottom: 1rem;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_xl;
+    }
 }
 
 .card-description {
     margin-bottom: 1rem;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_md;
+    }
 }
 
 .break {
@@ -236,6 +294,10 @@
     color: $prim-t_c;
     margin-bottom: 2rem;
     font-size: $font-size_md;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_xl;
+    }
 }
 
 .card-body .input-container {
@@ -250,6 +312,18 @@
         border-radius: 5px;
         text-align: center;
         padding: 0.5rem;
+
+        @media only screen and (min-width: $bp-seven) {
+            width: 80px;
+            font-size: $font-size_md;
+        }
+    }
+}
+
+.btn-order {
+    @media only screen and (min-width: $bp-seven) {
+        margin-bottom: 1.5rem;
+        font-size: $font-size_md;
     }
 }
 
@@ -264,6 +338,10 @@
     top: 60%;
     transition: 0.6s ease;
     opacity: 0.7;
+
+    @media only screen and (min-width: $bp-seven) {
+        font-size: $font-size_md;
+    }
 }
 
 .prev {
@@ -273,6 +351,10 @@
         background-color: $prim-t_c;
         color: black;   
     }
+
+    @media only screen and (min-width: $bp-seven) {
+        left: 20px;
+    }
 }
 
 .next {
@@ -281,6 +363,10 @@
     &:hover {
         background-color: $prim-t_c;
         color: black;   
+    }
+
+    @media only screen and (min-width: $bp-seven) {
+        right: 20px;
     }
 }
 /** ORDER SECTION END **/
@@ -310,6 +396,17 @@
     div {
         margin-bottom: 1rem;
     }
+
+    @media only screen and (min-width: $bp-seven) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        font-size: $font-size_md;
+    }
+    
 }
 
 .contact-form {
@@ -325,6 +422,10 @@
     label {
         margin-bottom: .5rem;
         color: $prim-t_c;
+
+        @media only screen and (min-width: $bp-seven) {
+            font-size: $font-size_md;
+        }
     }
 }
 
@@ -352,3 +453,17 @@
 
 
 /** CONTACT SECTION END **/
+
+
+
+@media only screen and (min-width: $bp-seven) {
+    h2.text_sub-title {
+        font-size:  $font-size_xl * 1.5;
+        margin-bottom: 6rem;
+    }
+
+    #Contact {
+        width: 650px;
+        margin: auto;
+    }
+}
