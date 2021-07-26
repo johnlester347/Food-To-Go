@@ -458,7 +458,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "title form" "contact form";
+    grid-template-areas: "title form"
+ "contact form";
     margin-top: 4rem;
     padding-bottom: 4rem; }
   #Contact h2.text_sub-title {
